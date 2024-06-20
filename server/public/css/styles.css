@@ -1,0 +1,277 @@
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos do corpo */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #e4e721;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #73d324;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 10px; /* Arredondar bordas do cabeçalho */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px; /* Arredondar bordas do contêiner do cabeçalho */
+}
+
+header img {
+    height: 50px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #56921e;
+    color: rgb(255, 255, 255);
+    border: 2px solid #56921e;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px; /* Arredondar bordas dos botões de navegação */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #35424a;
+}
+
+/* Seções principais */
+main {
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px; /* Arredondar bordas dos contêineres */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+main section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Arredondar bordas das seções */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+main h2 {
+    margin-bottom: 10px;
+    color: #35424a;
+    font-size: 1.5em;
+}
+
+main p {
+    font-size: 1.1em;
+    color: #395c1d;
+}
+
+/* Cartões da Galeria */
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    background: white;
+    border-radius: 10px; /* Arredondar bordas dos cartões */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* Para garantir que o conteúdo extra não vaze */
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Manter a proporção da imagem */
+    object-fit: cover; /* Preencher o contêiner definido */
+}
+
+.card-content {
+    padding: 10px;
+    border-bottom-left-radius: 10px; /* Arredondar borda inferior do conteúdo */
+    border-bottom-right-radius: 10px; /* Arredondar borda inferior do conteúdo */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de Contato */
+.contact {
+    background-color: #73d324;
+    padding: 40px 20px;
+    border-radius: 10px; /* Arredondar bordas da seção de contato */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.contact h2 {
+    color: #35424a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .form-group {
+    margin-bottom: 15px;
+}
+
+.contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Arredondar bordas dos inputs */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.contact button[type="submit"] {
+    background-color: #56921e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Arredondar bordas do botão */
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    align-self: center; /* Centralizar o botão */
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #2b373d;
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 10px; /* Arredondar bordas do rodapé */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #91843e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Design responsivo */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main h2 {
+        font-size: 1.3em;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Divisórias */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 40px 0;
+}
