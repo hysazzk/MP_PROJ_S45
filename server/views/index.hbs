@@ -1,12 +1,11 @@
-
-    <header>
+<header>
         <div class="container">
             <img src="/assets/img/logo.png" alt="Logo do Suco Maria Peregrina">
-            <h1>Bem-vindo ao Meu Site</h1>
             <nav>
                 <button onclick="location.href='#home'">Início</button>
                 <button onclick="location.href='#gallery'">Produtos</button>
                 <button onclick="location.href='#about'">Planos</button>
+                <button onclick="location.href='#sobre'">Sobre</button> <!-- Novo botão "Sobre" -->
                 <button onclick="location.href='#contato'">Cadastros</button>
             </nav>
         </div>
@@ -25,26 +24,25 @@
 
         <section id="gallery" class="container">
             <h2>Nossos Produtos</h2>
+        </section>
+        <section>
             <div class="cards-wrapper">
                 <div class="card">
-                    <img src="/assets/img/suco2L.png" alt="Suco de 2L">
+                    <img src="/assets/img/suco4l.png" alt="Suco de 2L">
                     <div class="card-content">
                         <p>SUCO DE 2L</p>
-                        <p>Descrição do suco de 2 litros.</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="/assets/img/suco1L.png" alt="Suco de 1L">
                     <div class="card-content">
                         <p>SUCO DE 1L</p>
-                        <p>Descrição do suco de 1 litro.</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="/assets/img/suco330ml.png" alt="Suco de 330ml">
                     <div class="card-content">
                         <p>SUCO DE 330ML</p>
-                        <p>Descrição do suco de 330 ml.</p>
                     </div>
                 </div>
             </div>
@@ -54,6 +52,8 @@
 
         <section id="about" class="container">
             <h2>Conheça os planos</h2>
+        </section>
+        <section>
             <div class="cards-wrapper">
                 <div class="card">
                     <img src="/assets/img/planostart.png" alt="Imagem 1">
@@ -64,6 +64,16 @@
                     <div class="card-content"></div>
                 </div>
             </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="sobre" class="container"> <!-- Nova seção "Sobre" -->
+            <h2>Sobre Nós</h2>
+            <p>A Suco Maria Peregrina foi fundada em 2021 com um propósito muito especial: ajudar e expandir nossa escola. O projeto nasceu da necessidade de buscar alternativas sustentáveis para o financiamento das atividades educacionais e do desejo de proporcionar uma alimentação saudável e nutritiva para nossos alunos e a comunidade.</p>
+            <p>Nossa missão é oferecer sucos de alta qualidade, feitos com os melhores ingredientes naturais, sem aditivos artificiais, preservando o sabor autêntico das frutas. Cada garrafa de Suco Maria Peregrina representa o compromisso com a saúde e o bem-estar dos nossos consumidores, ao mesmo tempo em que apoia diretamente os projetos educacionais da nossa escola.</p>
+            <p>Além de nutrir e refrescar, nossa empresa se orgulha de contribuir para a formação de um futuro melhor, investindo na educação e no desenvolvimento das crianças. Ao escolher os produtos da Suco Maria Peregrina, você está fazendo parte de uma história de dedicação, inovação e amor pela educação.</p>
+            <p>Agradecemos a todos que apoiam nossa causa e convidamos você a experimentar nossos sucos, feitos com carinho e responsabilidade. Juntos, podemos transformar vidas, uma garrafa de suco por vez.</p>
         </section>
 
         <hr class="divider">
@@ -90,12 +100,16 @@
         </section>
     </main>
 
-   <footer>
-    <div class="container">
-        <p>&copy; 2024 Suco Maria Peregrina. Todos os direitos reservados.</p>
-        <p>Contato: <a href="mailto:contato@mariaperegrina.com">contato@mariaperegrina.com</a></p>
-        <p> Instagram: <a href="https://www.instagram.com/sucomariaperegrina?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw==" target="_blank">Suco Maria Peregrina</a></p>
-    </div>
-</footer>
-    <script src="scripts.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Suco Maria Peregrina. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://wa.me/1234567890" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/sucomariaperegrina?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:contato@mariaperegrina.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://maps.app.goo.gl/qRedY5AV1yB5TtgZ7" target="_blank" class="social-icon"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+        </div>
+    </footer>
 
+    <script src="scripts.js"></script>

@@ -1,0 +1,15 @@
+
+{
+  "name": "my-landing-page",
+  "version": "1.0.0",
+  "description": "Uma landing page usando Handlebars e Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4"
+  }
+}
+
